@@ -1,28 +1,27 @@
 describe('Partners test', () => {
 
     it('1. Launch Browser and Navigate then Search by New Truck', () => {
-        cy.visit('https://initial.bareegaree.com/');
-        cy.title().should('contain', 'Partners')
- 	      cy.wait(2000)
-	      cy.get('#searchText').clear()
-	      cy.get('#searchText').type('New truck')
-	      cy.get('#search-form > .fa-solid').click();
-	      cy.wait(3000)
+        	cy.visit('https://initial.bareegaree.com/');
+        	cy.title().should('contain', 'Partners')
+ 	      	cy.wait(2000)
+	      	cy.get('#searchText').clear()
+	      	cy.get('#searchText').type('New truck')
+	     	cy.get('#search-form > .fa-solid').click();
+	      	cy.wait(3000)
 	})
 
     it('2. Search by Mini Bus', () => {
-	      cy.get('#searchText').clear()
-        cy.get('#searchText').type('Mini bus')
-	      cy.get('#search-form > .fa-solid').click();
-	      cy.wait(3000)
+	      	cy.get('#searchText').clear()
+         	cy.get('#searchText').type('Mini bus')
+	     	cy.get('#search-form > .fa-solid').click();
+	      	cy.wait(3000)
 	
 	})
 	
 
 	it('3. See all the ads', () => {
-	cy.get('.left_list > :nth-child(2) > a').click()
-	cy.get(':nth-child(2) > .page-link').click()
-	cy.wait(3000)
+		cy.get('.left_list > :nth-child(2) > a').click()
+		cy.wait(3000)
 	})
 
 
